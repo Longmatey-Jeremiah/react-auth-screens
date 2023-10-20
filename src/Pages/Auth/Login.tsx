@@ -1,7 +1,7 @@
 import React from "react";
 import { AuthLayout } from "../../layout";
 import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
-import { Button, Heading, Input } from "../../components/ui";
+import { Button, Heading, Input } from "../../components";
 import { Link } from "react-router-dom";
 
 export function Login() {
