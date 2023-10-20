@@ -6,7 +6,7 @@ export function AuthLayout({ children }: { children: ReactNode }) {
       <Box
         w="100%"
         h={"100vh"}
-        p={4}
+        p={[1, 6]}
         display={"flex"}
         flexDirection={["column", "row"]}
         justifyContent={"space-between"}
@@ -36,14 +36,6 @@ export function AuthLayout({ children }: { children: ReactNode }) {
             alignItems={"flex-end"}
             pb={[4, 10]}
           >
-            {/* <Image
-              zIndex={1}
-              src={require("../assets/background/auth-bg.jpg")}
-              alt="Auth bg"
-              h={"100%"}
-              w={"100%"}
-              borderRadius={20}
-            /> */}
             <Box
               h={["130px", "200px"]}
               w={"90%"}
@@ -65,7 +57,9 @@ export function AuthLayout({ children }: { children: ReactNode }) {
             </Box>
           </Box>
         </Box>
-        <Box flex={[1, 0.55]}>{children}</Box>
+        <Box flex={[1, 0.55]} justifyContent={"center"} display={"flex"}>
+          {children}
+        </Box>
       </Box>
     </>
   );
